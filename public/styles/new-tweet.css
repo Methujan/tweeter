@@ -4,8 +4,12 @@
  
 }
 
+.text-area{
+  width:100%;
+  padding:5px;
+}
 
-#tweet-text{
+.text-area{
 
   display: flex;
   font-weight: bold;
