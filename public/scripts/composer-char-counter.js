@@ -6,6 +6,8 @@ $(document).ready(function() {
   $('.text-area').on('keypress', function() {
     console.log(this);
     console.log($(this).val().length);
+    console.log(140 - $(this).val().length);
+
   })
 
 });
