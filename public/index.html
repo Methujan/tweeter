@@ -10,7 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- External CSS -->
     <link
@@ -22,8 +26,8 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type='text/css'>
-    <link rel="stylesheet" href="/styles/new-tweet.css" type='text/css'>
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -39,20 +43,24 @@
       <span class="title">Tweeter</span>
       <span class="titleText">
         <strong>Write</strong> a new tweet
-        
-        <p style="justify-content: center;display: flex;margin: 0;color: red;"><i class="fas fa-angle-double-down"></i></p>
+
+        <p
+          style="justify-content: center; display: flex; margin: 0; color: red"
+        >
+          <i class="fas fa-angle-double-down"></i>
+        </p>
       </span>
     </nav>
 
-    <header class= 'avatar-name'>
+    <header class="avatar-name">
       <div class="avatar">
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png" />
       </div>
-      <br>
+      <br />
       <div class="name">
-          <h2>Your Name</h2>
+        <h2>Your Name</h2>
       </div>
-  </header>
+    </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -60,7 +68,7 @@
         <form method="POST" action="/tweets">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" class="text-area"></textarea>
-          <div class='button-counter'>
+          <div class="button-counter">
             <button class="tweet-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
@@ -69,12 +77,23 @@
       <section>
         <article class="old-tweet">
           <header>
-            <h4>Zoro</h4>
-            <h4>@Roronoa</h4>
+            <h4 class="old-tweet-name"><i class="fas fa-user-ninja"></i> Zoro</h4>
+            <h4 class='old-tweet-handle'>@Roronoa</h4>
           </header>
-          <p>Santoryuu</p>
+          <p>Santoryuuuuuuuuuuu tatsumaki</p>
           <footer>
-
+            <p>10 days</p>
+            <p class="icons">
+              <button class="icon-btn">
+                <i class="fas fa-flag"></i>
+              </button>
+              <button class="icon-btn">
+                <i class="fas fa-retweet"></i>
+              </button>
+              <button class="icon-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </p>
           </footer>
         </article>
       </section>

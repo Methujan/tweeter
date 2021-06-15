@@ -24,10 +24,55 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ section{
+   padding:10px;
+   padding-top: 50px;
+ }
+
+ article.old-tweet:hover{
+  box-shadow: dimgrey;
+ }
+ article.old-tweet {
+   border: solid #000;
+   border-width: medium;
+   border-color: dimgray;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
 
  article.old-tweet header{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   
  }
+
+
+ .old-tweet-handle{
+  color: rgba(0, 0, 0, 0.3);
+ }
+
+ article.old-tweet footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   border-top: solid dimgray;
+   border-width: medium;
+   border-color: dimgray;
+   padding-top: 0;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+ .icons{
+    flex-direction: row;
+   justify-content: space-between;
+ }
+
+ .icon-btn{
+   border:none;
+
+ }
+
+ .icon-btn:hover {
+  background-color: RoyalBlue;
+}
