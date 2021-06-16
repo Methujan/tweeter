@@ -47,8 +47,8 @@ $(document).ready(function() {
 const createTweetElement = function(tweet) {
   //let $tweet = /* Your code for creating the tweet element */
   // ...
-  const $art = $('<article>')
-  $art.addClass('tweet')
+  const $tweet = $('<article>');
+  $tweet.addClass('tweet');
   const html = $(
   `<header>
             <h4 class="tweet-name"><i class="fas fa-user-ninja"></i> ${tweet.user.name}</h4>
@@ -73,24 +73,25 @@ const createTweetElement = function(tweet) {
             </p>
           </footer>
   `);
-  $art.append(html)
-  return $art;
+  $tweet.append(html);
+  return $tweet;
 }
-const $art = createTweetElement(tweetData);
+//const $tweet = createTweetElement(tweetData);
 
 const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
   tweets.forEach(tweet => {
-    $('#tweet-container').append(createTweetElement(tweet))
+    $('#tweets-container').append(createTweetElement(tweet));
   })
 
 }
 
-//renderTweets(data)
+
+renderTweets(data);
 
 // Test / driver code (temporary)
-console.log('tweet',$art); // to see what it looks like
-$('#tweets-container').append($art); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+//console.log('tweet',$tweet); // to see what it looks like
+//$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 })

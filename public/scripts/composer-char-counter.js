@@ -11,6 +11,21 @@ $(document).ready(function() {
     }
   })
 
-  const timeAgo = $.timeago('2021-06-15'); 
-  $('#post1').text(timeAgo);
+  //$('time.timeago').timeago();
+
+  //const timeAgo = $.timeago(14611139590885);
+  //$('#post1').text(timeAgo);
+
+  
+  const timeAgo = $.timeago(Number($('time').attr('datetime')))
+  $('#post1').text(timeAgo)
 });
+
+//const timeAAgo = $('time').attr('datetime')
+//  $('#post1').text(timeAAgo)
+
+/*
+const timeAAgo = $('time').attr('datetime')
+timeAAAgo = Number(timeAAgo)
+const timeAgo = $.timeago(timeAAAgo)
+$('#post1').text(timeAgo) */
