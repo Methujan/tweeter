@@ -30,14 +30,16 @@ body {
  }
 
  article.old-tweet:hover{
-  box-shadow: dimgrey;
+  box-shadow: 5px 5px #888888;
  }
+
  article.old-tweet {
    border: solid #000;
    border-width: medium;
    border-color: dimgray;
    padding-left: 10px;
    padding-right: 10px;
+   
  }
 
  article.old-tweet header{
@@ -52,21 +54,18 @@ body {
  }
 
  article.old-tweet footer{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+  
    border-top: solid dimgray;
    border-width: medium;
    border-color: dimgray;
    padding-top: 0;
    padding-left: 10px;
    padding-right: 10px;
- }
-
- .icons{
-    flex-direction: row;
+   display: flex;
+   flex-direction: row;
    justify-content: space-between;
  }
+
 
  .icon-btn{
    border:none;
