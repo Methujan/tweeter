@@ -1,8 +1,6 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  console.log('herpherpherrp');
-  let maxCount = 14;
-  const characterCount = $('.text-area');
+  let maxCount = 140;
 
   $('.text-area').on('keypress', function() {
     const countRemaining = maxCount - $(this).val().length;
@@ -13,4 +11,6 @@ $(document).ready(function() {
     }
   })
 
+  const timeAgo = $.timeago('2021-06-15'); 
+  $('#post1').text(timeAgo);
 });

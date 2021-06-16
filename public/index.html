@@ -33,6 +33,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/composer-char-counter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.3/jquery.timeago.js" ></script>
+    
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
   </head>
@@ -61,7 +62,7 @@
       </div>
     </header>
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main id="tweets-container"class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
@@ -73,17 +74,17 @@
           </div>
         </form>
       </section>
-      <section>
-        <article class="old-tweet">
+      <section >
+        <article class="tweet">
           <header>
-            <h4 class="old-tweet-name"><i class="fas fa-user-ninja"></i> Zoro</h4>
-            <h4 class='old-tweet-handle'>@Roronoa</h4>
+            <h4 class="tweet-name"><i class="fas fa-user-ninja"></i> Zoro</h4>
+            <h4 class='tweet-handle'>@Roronoa</h4>
           </header>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore excepturi repellendus sed eaque? Architecto cumque amet quis nulla, natus excepturi, quae possimus nobis, magni delectus quaerat deserunt quas soluta autem?
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore excepturi repellendus sed eaque? Architecto cumque amet quis nulla.
           </p>
           <footer>
             <p >
-              Posted <time class="timeago" datetime="June 15, 2021 18:00"> </time>
+              Posted <time id="post1" class="timeago" > </time>
             </p>
             <p class="icons">
               <button class="icon-btn">
