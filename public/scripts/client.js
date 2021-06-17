@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   const renderTweets = function (tweets) {
     tweets.forEach(tweet => {
-      $('#tweets-container').append(createTweetElement(tweet));
+      $('.old-tweets-container').prepend(createTweetElement(tweet));
     })
 
   }
@@ -83,7 +83,6 @@ $(document).ready(function () {
         url: "/tweets",
         method: "GET",
         success: function(tweets) {
-          
           renderTweets(tweets);
         }
       })
