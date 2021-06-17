@@ -5,6 +5,13 @@
  */
 
 $(document).ready(function () {
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function (tweet) {
     const $tweet = $('<article>');
     $tweet.addClass('tweet');
@@ -13,7 +20,7 @@ $(document).ready(function () {
             <h4 class="tweet-name"><i class="fas fa-user-ninja"></i> ${tweet.user.name}</h4>
             <h4 class='tweet-handle'>${tweet.user.handle}</h4>
           </header>
-          <p>${tweet.content.text}
+          <p>${escape(tweet.content.text)}
           </p>
           <footer>
             <p >
@@ -110,3 +117,5 @@ const loadTweets = function() {
     })
   }
   */
+
+ 
