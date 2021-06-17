@@ -64,14 +64,39 @@ $(document).ready(function () {
       method: 'POST',
       data: $(this).serialize()
     })
+
+    .done(function() {
+      $('.text-area').val('');
+      loadTweets()
+    })
     
-    console.log($(this).serialize());
+  
+    //console.log($(this).serialize());
   }
 
   })
 
 
   const loadTweets = function() {
+      console.log('Button clicked, performing ajax call...');
+      $.ajax({
+        url: "/tweets",
+        method: "GET",
+        success: function(tweets) {
+          
+          renderTweets(tweets);
+        }
+      })
+  
+  }
+  //loadTweets();
+
+})
+
+
+
+/*
+const loadTweets = function() {
     const $button = $('.tweet-button');
     $button.on('click', function() {
       console.log('Button clicked, performing ajax call...');
@@ -79,12 +104,10 @@ $(document).ready(function () {
         url: "/tweets",
         method: "GET",
       })
-      .then(function(tweets){
+      .done(function(tweets){
         renderTweets(tweets);
 
       })
     })
   }
-  loadTweets();
-
-})
+  */
