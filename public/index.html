@@ -65,7 +65,7 @@
     <main id="tweets-container"class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <form method="POST" action="/tweets" class='form'>
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" class="text-area"></textarea>
           <div class="button-counter">
@@ -75,30 +75,7 @@
         </form>
       </section>
       <section >
-        <article class="tweet">
-          <header>
-            <h4 class="tweet-name"><i class="fas fa-user-ninja"></i> Zoro</h4>
-            <h4 class='tweet-handle'>@Roronoa</h4>
-          </header>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore excepturi repellendus sed eaque? Architecto cumque amet quis nulla.
-          </p>
-          <footer>
-            <p >
-              Posted <time id="post1" class="timeago" > </time>
-            </p>
-            <p class="icons">
-              <button class="icon-btn">
-                <i class="fas fa-flag"></i>
-              </button>
-              <button class="icon-btn">
-                <i class="fas fa-retweet"></i>
-              </button>
-              <button class="icon-btn">
-                <i class="fas fa-heart"></i>
-              </button>
-            </p>
-          </footer>
-        </article>
+        
       </section>
     </main>
   </body>
