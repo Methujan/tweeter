@@ -55,31 +55,32 @@ $(document).ready(function () {
 // Post to server
   $(".form").submit(function(event) {
     event.preventDefault();
-    //console.log('this.serial.length',$(this).serialize().length)
-    console.log('textarea:',$(".text-area").val().length)
+    $('.error-container').slideUp();
+  
+    //console.log('textarea:',$(".text-area").val().length)
 
     if (($(this).serialize().length - 5) > 140) {
-      alert('Characters have exceeded the limit.');
+     // alert('Characters have exceeded the limit.');
+
+      $('.error-container').slideDown('fast').addClass('error fas fa-exclamation-triangle').text('Characters have exceeded the limit.');
 
     } else if (($(".text-area").val().length) === 0) {
-      alert('Please enter a tweet');
+      //alert('Please enter a tweet');
+      $('.error-container').slideDown('fast').addClass('error fas fa-exclamation-triangle').text('Please enter a tweet.');
 
     } else {
 
-    $.ajax({ 
-      url:"/tweets/",
-      method: 'POST',
-      data: $(this).serialize()
-    })
+      $.ajax({ 
+        url:"/tweets/",
+        method: 'POST',
+        data: $(this).serialize()
+      })
 
-    .done(function() {
-      $('.text-area').val('');
-      loadTweets()
-    })
-    
-  
-    //console.log($(this).serialize());
-  }
+      .done(function() {
+        $('.text-area').val('');
+        loadTweets()
+      })
+    }
 
   })
 
