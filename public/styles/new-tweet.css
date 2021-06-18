@@ -1,29 +1,27 @@
 
-.new-tweet{
-  background-color: #f4f1ec;
- 
+.new-tweet {
+  background-color: #f5f1e3ff;
 }
 
-.text-area{
+.text-area {
   width:100%;
   padding:5px;
 }
 
-.text-area{
-
+.text-area {
   display: flex;
   font-weight: bold;
-  border-color: #f4f1ec;
-  background-color: #f4f1ec;
+  border-color: #f5f1e3ff;
+  background-color: #f5f1e3ff;
   border-bottom-color: dimgray;
   border-bottom-width: medium;
 }
-.tweet-button{
+.tweet-button {
   font-family: 'Bungee', cursive;
-  background-color: #4056A1;
+  background-color: #1b9aaaff;
   color: #FFFF;
 }
-.counter{
+.counter {
   font-family: 'Bungee', cursive;
   color:dimgray;
 }
@@ -32,14 +30,13 @@
 display: flex;
 justify-content: space-between;
 padding-top: 10px;
-
 }
 
-.tooManyWords{
+.tooManyWords {
   color: red;
 }
 
-.error{
+.error {
   color: red;
   border: solid red;
   display: flex;

@@ -6,12 +6,14 @@
 
 $(document).ready(function () {
 
+  //Blocks users from writing scripts into input
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
+  //Creates tweet from input
   const createTweetElement = function (tweet) {
     const $tweet = $('<article>');
     $tweet.addClass('tweet');
@@ -56,8 +58,6 @@ $(document).ready(function () {
   $(".form").submit(function(event) {
     event.preventDefault();
     $('.error-container').slideUp();
-  
-    //console.log('textarea:',$(".text-area").val().length)
 
     if (($(this).serialize().length - 5) > 140) {
       $('.error-container').slideDown('fast').addClass('error fas fa-exclamation-triangle').text('Characters have exceeded the limit.');
@@ -97,22 +97,5 @@ $(document).ready(function () {
 })
 
 
-
-/*
-const loadTweets = function() {
-    const $button = $('.tweet-button');
-    $button.on('click', function() {
-      console.log('Button clicked, performing ajax call...');
-      $.ajax({
-        url: "/tweets",
-        method: "GET",
-      })
-      .done(function(tweets){
-        renderTweets(tweets);
-
-      })
-    })
-  }
-  */
 
  

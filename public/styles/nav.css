@@ -1,6 +1,7 @@
 nav {
   font-family: 'Bungee', cursive;
-  background-color: #4056A1;
+  background-color: #050505ff;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -15,13 +16,20 @@ nav {
   width: 100%;
 }
 
-.title{
+.title {
   padding: 0px;
   font-size: 40px;
 }
 
-.titleText{
+.titleText {
   font-family: sans-serif;
   font-size: 20px;
   
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #050505ff;
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+  }
 }

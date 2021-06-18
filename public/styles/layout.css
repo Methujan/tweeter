@@ -16,7 +16,7 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #f5f1e3ff;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -24,12 +24,12 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- section{
+ section {
    padding:10px;
    padding-top: 50px;
  }
 
- article.tweet:hover{
+ article.tweet:hover {
   box-shadow: 5px 5px #888888;
  }
 
@@ -42,18 +42,18 @@ body {
    
  }
 
- article.tweet header{
+ article.tweet header {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
  }
 
 
- .tweet-handle{
+ .tweet-handle {
   color: rgba(0, 0, 0, 0.3);
  }
 
- article.tweet footer{
+ article.tweet footer {
   
    border-top: solid dimgray;
    border-width: medium;
@@ -67,13 +67,14 @@ body {
  }
 
 
- .icon-btn{
+ .icon-btn {
+   background-color:#f5f1e3ff;
    border:none;
 
  }
 
  .icon-btn:hover {
-  color: RoyalBlue;
+  color: #1b9aaaff;
 }
 
 
