@@ -1,15 +1,23 @@
 header.avatar-name {
-  height: 400px;
+  height: 420px;
   width: 100%;
   background-color: #001436;
-  background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
   margin-top: 120px;
 }
-
+.avatar-background {
+  padding: 20px;
+  border: solid #f4f1ec;
+  border-width: 20px;
+  background-position: center;
+}
+.avatar{
+  height: 60%;
+  padding-top: 20px;
+}
 .avatar, .name{
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
 main{
@@ -26,7 +34,8 @@ main{
   margin-top: 250px;
   }
 
-  .avatar{
-    height: 70%;
+  .avatar {
+    height: 60%;
+    padding-top: 20px;
   }
 }
