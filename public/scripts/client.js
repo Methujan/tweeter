@@ -60,16 +60,12 @@ $(document).ready(function () {
     //console.log('textarea:',$(".text-area").val().length)
 
     if (($(this).serialize().length - 5) > 140) {
-     // alert('Characters have exceeded the limit.');
-
       $('.error-container').slideDown('fast').addClass('error fas fa-exclamation-triangle').text('Characters have exceeded the limit.');
 
     } else if (($(".text-area").val().length) === 0) {
-      //alert('Please enter a tweet');
       $('.error-container').slideDown('fast').addClass('error fas fa-exclamation-triangle').text('Please enter a tweet.');
 
     } else {
-
       $.ajax({ 
         url:"/tweets/",
         method: 'POST',
@@ -78,7 +74,7 @@ $(document).ready(function () {
 
       .done(function() {
         $('.text-area').val('');
-        loadTweets()
+        loadTweets();
       })
     }
 
@@ -96,7 +92,7 @@ $(document).ready(function () {
       })
   
   }
-  //loadTweets();
+  loadTweets();
 
 })
 

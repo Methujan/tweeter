@@ -11,21 +11,22 @@ $(document).ready(function() {
     }
   })
 
-  //$('time.timeago').timeago();
-
+// Sets time of post
   //const timeAgo = $.timeago(14611139590885);
   //$('#post1').text(timeAgo);
 
+  //const timeAgo = $.timeago(Number($('time').attr('datetime')))
+//console.log('timeAgo', timeAgo);
+  //$('.timeago').text(timeAgo)
+
+
+  //$('time.timeago').timeago();
+
   
-  const timeAgo = $.timeago(Number($('time').attr('datetime')))
-  $('#post1').text(timeAgo)
+  
+  //const timeAgo = $.timeago(Number($('time').attr('datetime')))
+  //$('.timeago').text(timeAgo)
+
+
 });
 
-//const timeAAgo = $('time').attr('datetime')
-//  $('#post1').text(timeAAgo)
-
-/*
-const timeAAgo = $('time').attr('datetime')
-timeAAAgo = Number(timeAAgo)
-const timeAgo = $.timeago(timeAAAgo)
-$('#post1').text(timeAgo) */

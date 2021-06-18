@@ -18,3 +18,15 @@ main{
   background-color: #f4f1ec;
  
 }
+
+@media only screen and (min-width: 1024px) {
+  header.avatar-name {
+  width: 50%;
+  float:left;
+  margin-top: 250px;
+  }
+
+  .avatar{
+    height: 70%;
+  }
+}

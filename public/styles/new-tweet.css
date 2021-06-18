@@ -35,7 +35,14 @@ padding-top: 10px;
 
 }
 
-
 .tooManyWords{
   color: red;
+}
+
+.error{
+  color: red;
+  border: solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
