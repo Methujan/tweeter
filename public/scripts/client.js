@@ -54,43 +54,43 @@ $(document).ready(function () {
   }
 
 
-// Post to server
-  $(".form").submit(function(event) {
+  // Post to server
+  $(".form").submit(function (event) {
     event.preventDefault();
     $('.error-container').slideUp();
 
-    if (($(this).serialize().length - 5) > 140) {
+    if (($(".text-area").val().length) > 140) {
       $('.error-container').slideDown('fast').addClass('error fas fa-exclamation-triangle').text('Characters have exceeded the limit.');
 
     } else if (($(".text-area").val().length) === 0) {
       $('.error-container').slideDown('fast').addClass('error fas fa-exclamation-triangle').text('Please enter a tweet.');
 
     } else {
-      $.ajax({ 
-        url:"/tweets/",
+      $.ajax({
+        url: "/tweets/",
         method: 'POST',
         data: $(this).serialize()
       })
 
-      .done(function() {
-        $('.text-area').val('');
-        loadTweets();
-      })
+        .done(function () {
+          $('.text-area').val('');
+          loadTweets();
+        })
     }
 
   })
 
 
-  const loadTweets = function() {
-      console.log('Button clicked, performing ajax call...');
-      $.ajax({
-        url: "/tweets",
-        method: "GET",
-        success: function(tweets) {
-          renderTweets(tweets);
-        }
-      })
-  
+  const loadTweets = function () {
+    console.log('Button clicked, performing ajax call...');
+    $.ajax({
+      url: "/tweets",
+      method: "GET",
+      success: function (tweets) {
+        renderTweets(tweets);
+      }
+    })
+
   }
   loadTweets();
 
@@ -98,4 +98,3 @@ $(document).ready(function () {
 
 
 
- 

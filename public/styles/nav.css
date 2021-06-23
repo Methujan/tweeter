@@ -1,5 +1,5 @@
 nav {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   background-color: #050505ff;
   background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
   display: flex;
@@ -8,7 +8,7 @@ nav {
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 0.5em;
-  color: #FFFF;
+  color: #ffff;
   height: 120px;
   z-index: 10;
   position: fixed;
@@ -24,7 +24,6 @@ nav {
 .titleText {
   font-family: sans-serif;
   font-size: 20px;
-  
 }
 
 @media only screen and (min-width: 1024px) {

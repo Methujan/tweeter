@@ -30,8 +30,8 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/composer-char-counter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.3/jquery.timeago.js" ></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.3/jquery.timeago.js"></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
   </head>
@@ -42,7 +42,14 @@
       <span class="title">Tweeter</span>
       <span class="titleText">
         <strong>Write</strong> a new tweet
-        <p style="justify-content: center; display: flex; margin: 0; color: #1b9aaaff">
+        <p
+          style="
+            justify-content: center;
+            display: flex;
+            margin: 0;
+            color: #1b9aaaff;
+          "
+        >
           <i class="fas fa-angle-double-down"></i>
         </p>
       </span>
@@ -50,32 +57,33 @@
 
     <header class="avatar-name">
       <div class="avatar-background">
-      <div class="avatar">
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div class="name">
-        <h2>Somebody</h2>
-      </div>
+        <div class="avatar">
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div class="name">
+          <h2>Somebody</h2>
+        </div>
       </div>
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <div class='error-container'>
-        </div>
+        <div class="error-container"></div>
         <h2></h2>
-        <form method="POST" action="/tweets" class='form'>
+        <form method="POST" action="/tweets" class="form">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" class="text-area"></textarea>
           <div class="button-counter">
-            <button class="tweet-button" type="submit">Tweet <img src="/images/bird.png" alt="" width='25px' height = '22px'></button>
+            <button class="tweet-button" type="submit">
+              Tweet
+              <img src="/images/bird.png" alt="" width="25px" height="22px" />
+            </button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-      <section class="old-tweets-container">
-      </section>
+      <section class="old-tweets-container"></section>
     </main>
   </body>
 </html>
