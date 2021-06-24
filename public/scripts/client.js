@@ -47,6 +47,7 @@ $(document).ready(function () {
 
 
   const renderTweets = function (tweets) {
+    $('.old-tweets-container').empty();
     tweets.forEach(tweet => {
       $('.old-tweets-container').prepend(createTweetElement(tweet));
     })
